@@ -42,18 +42,18 @@ O projeto foi construído com foco em eficiência, design limpo e utilidade prá
 ---
 
 ## 📍 Central de Atendimento e Cadastros
-* **Sertãozinho:** 
-  * Terminal Urbano (Rua Sebastião Sampaio, 1009 - Centro)
-  * Secretaria Municipal de Educação (Rua Washington Luiz, 1040 - Centro)
-* **Guariba:** 
-  * Terminal Rodoviário José Chartune (Rua dos Belodi, s/n - Centro)
-* **WhatsApp de Contato:** (16) 99154-3499
-* **Site Oficial:** [www.sertanezina.com.br](https://www.sertanezina.com.br/)
+- **Sertãozinho:** 
+  - Terminal Urbano (Rua Sebastião Sampaio, 1009 - Centro)
+  - Secretaria Municipal de Educação (Rua Washington Luiz, 1040 - Centro)
+- **Guariba:** 
+  - Terminal Rodoviário José Chartune (Rua dos Belodi, s/n - Centro)
+- **WhatsApp de Contato:** (16) 99154-3499
+- **Site Oficial:** [www.sertanezina.com.br](https://www.sertanezina.com.br/)
 
 ---
 
 ## ⚙️ Funcionalidades e Diferenciais
-- **Carregamento Dinâmico (JSON):** Separação inteligente dos dados das rotas em um arquivo `routes.json` consumido via JavaScript (`fetch`).
+- **Carregamento Dinâmico (JSON):** Separação inteligente dos dados das rotas em um arquivo `routes.json` consumido via JavaScript assíncrono (`fetch`).
 - **Assistente Virtual GenAI:** Chatbot inteligente integrado na interface capaz de responder dúvidas dos estudantes em linguagem natural sobre rotas, valores e regras.
 - **Busca em Tempo Real:** Filtro instantâneo por nome de faculdade, cidade ou termos na barra de pesquisa.
 - **Indicador de Status Operacional:** Verifica automaticamente se o serviço está operando ou encerrado com base nos dias úteis e horários.
@@ -66,3 +66,11 @@ O projeto foi construído com foco em eficiência, design limpo e utilidade prá
 - **JavaScript Moderno (ES6+)** (Manipulação assíncrona, renderização dinâmica e lógica do Chatbot)
 - **Git & GitHub** (Controle de versão)
 - **Vercel** (Deploy contínuo e hospedagem)
+
+---
+
+## 👩‍💻 Autoria
+Desenvolvido por **Vitória Baltazar** (Jovem Aprendiz na Viação Sertanezina) 🚀
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/vitoriabaltazar/) 
+- 🐙 [GitHub](https://github.com/vicbaltazar)
