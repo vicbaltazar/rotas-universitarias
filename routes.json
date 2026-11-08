@@ -1,0 +1,57 @@
+[
+  {
+    "id": "sertaozinho-ribeirao",
+    "title": "Barão de Mauá (Sertãozinho ➔ Ribeirão Preto)",
+    "departure": "06:00 | 11:30 | 18:00 (Ginásio Docão)",
+    "return": "12:30 | 13:00 | 16:00 | 17:00 | 18:50 | 23:00 | 00:00",
+    "price": "R$ 70,00 / mês",
+    "priceSub": "(R$ 35,00 Bolsistas ProUni / FIES)",
+    "exemption": "",
+    "tags": ["barão de mauá", "centro", "itatiaia", "aviação", "aces high", "pimentel", "sertãozinho", "ribeirão preto", "35", "70", "mensalidade", "prouni", "fies"],
+    "tagList": ["Sede | Centro", "Itatiaia", "Aviação (Aces High)", "R$ 70 / R$ 35 (ProUni/FIES)"]
+  },
+  {
+    "id": "sertaozinho-moura",
+    "title": "Moura Lacerda (Sertãozinho ➔ Ribeirão Preto)",
+    "departure": "06:00 | 11:30 | 18:00 (Ginásio Docão)",
+    "return": "12:30 | 13:00 | 16:00 | 17:00 | 18:50 | 23:00 | 00:00",
+    "price": "R$ 70,00 / mês",
+    "priceSub": "(R$ 35,00 Bolsistas ProUni / FIES)",
+    "exemption": "",
+    "tags": ["moura lacerda", "senac", "senai", "upa", "sertãozinho", "ribeirão preto", "35", "70", "mensalidade", "prouni", "fies"],
+    "tagList": ["Sede", "Senac", "Senai", "UPA", "R$ 70 / R$ 35 (ProUni/FIES)"]
+  },
+  {
+    "id": "sertaozinho-jaboticabal",
+    "title": "Sertãozinho ➔ Jaboticabal",
+    "departure": "18:00 (Av. João Perticarrari, em frente ao Posto Savegnago)",
+    "return": "23:00 (Pick up nas escolas e drop off personalizado)",
+    "price": "R$ 70,00 / mês",
+    "priceSub": "(R$ 35,00 Bolsistas ProUni / FIES)",
+    "exemption": "",
+    "tags": ["jaboticabal", "sertãozinho", "são luiz", "usp", "moura lacerda", "unesp", "35", "70", "mensalidade", "prouni", "fies"],
+    "tagList": ["São Luiz", "USP", "Moura Lacerda", "Unesp"]
+  },
+  {
+    "id": "guariba-ribeirao",
+    "title": "Guariba ➔ Ribeirão Preto",
+    "departure": "05:20 | 10:40 | 17:30 (Praça Central)",
+    "return": "12:00 | 16:45 | 22:45 (Praça Central)",
+    "price": "R$ 370,00 / mês",
+    "priceSub": "",
+    "exemption": "📅 Isento nas férias de Julho e Dezembro",
+    "tags": ["guariba", "ribeirão preto", "praça central", "usp", "senai", "senac", "barão central", "unaerp", "estacio", "unip", "cursinho", "fatec", "anhanguera", "etec", "regis", "grau tecnico", "370", "mensalidade", "ferias", "julho", "dezembro", "isento"],
+    "tagList": ["USP", "Senai / Senac", "Unaerp", "UNIP", "Fatec", "R$ 370,00"]
+  },
+  {
+    "id": "guariba-taquaritinga",
+    "title": "Guariba ➔ Taquaritinga",
+    "departure": "17:30 (Praça Central)",
+    "return": "22:40 (Praça Central)",
+    "price": "R$ 370,00 / mês",
+    "priceSub": "",
+    "exemption": "📅 Isento nas férias de Julho e Dezembro",
+    "tags": ["guariba", "taquaritinga", "praça central", "fatec", "ipif", "370", "mensalidade", "ferias", "julho", "dezembro", "isento"],
+    "tagList": ["Fatec", "IPIF", "R$ 370,00"]
+  }
+]
