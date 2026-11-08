@@ -3,204 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotas Universitárias</title>
+    <title>Rotas Universitárias - Viação Sertanezina</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Painel de Rotas</h1>
-        <p class="description">Aqui você pode visualizar as rotas universitárias disponíveis e horários.</p>
+        <h1>Painel de Rotas Universitárias</h1>
+        <p class="subtitle" style="font-weight: bold; color: var(--text-main); margin-top: 5px;">🚌 Viação Sertanezina</p>
+        <p class="description">Consulte as rotas, horários, instituições atendidas, mensalidades e regras de embarque.</p>
     </header>
 
     <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Pesquisar cidade ou faculdade..." onkeyup="filterRoutes()">
+        <input type="text" id="searchInput" placeholder="Pesquisar cidade, faculdade, valor ou regras..." onkeyup="filterRoutes()">
     </div>
 
-    <div class="container" id="routesContainer">
-        <div class="card" data-tags="barão de mauá centro itatiaia aviação aces high pimentel sertãozinho ribeirão preto">
-            <h2>Barão de Mauá (Sertãozinho ➔ Ribeirão Preto)</h2>
-            <span class="status-badge" data-route="sertaozinho-barao-de-maua">Verificando status...</span>
-            <div class="info-item"><span class="info-label">Saída de Sertãozinho:</span> 06:00 | 11:30 | 18:00 (Ginásio Docão)</div>
-            <div class="info-item"><span class="info-label">Retorno (Ribeirão Preto):</span> 12:30 | 13:00 | 16:00 | 17:00 | 18:50 | 23:00 | 00:00</div>
-            <div class="info-item">
-                <span class="price-badge">
-                    R$ 70,00 / mês 
-                    <span class="price-sub">(R$ 35,00 Bolsistas ProUni / FIES)</span>
-                </span>
-            </div>
-            <div class="tag-list">
-                <span class="tag">Sede | Centro</span>
-                <span class="tag">Itatiaia</span>
-                <span class="tag">Aviação (Aces High)</span>
-                <span class="tag">R$ 70 / R$ 35 (ProUni/FIES)</span>
-            </div>
-        </div>
+    <div class="container" id="routesContainer"></div>
 
-        <div class="card" data-tags="moura lacerda senac senai upa sertãozinho ribeirão preto">
-            <h2>Moura Lacerda (Sertãozinho ➔ Ribeirão Preto)</h2>
-            <span class="status-badge" data-route="sertaozinho-moura-lacerda">Verificando status...</span>
-            <div class="info-item"><span class="info-label">Saída de Sertãozinho:</span> 06:00 | 11:30 | 18:00 (Ginásio Docão)</div>
-            <div class="info-item"><span class="info-label">Retorno (Ribeirão Preto):</span> 12:30 | 13:00 | 16:00 | 17:00 | 18:50 | 23:00 | 00:00</div>
-            <div class="info-item">
-                <span class="price-badge">
-                    R$ 70,00 / mês 
-                    <span class="price-sub">(R$ 35,00 Bolsistas ProUni / FIES)</span>
-                </span>
-            </div>
-            <div class="tag-list">
-                <span class="tag">Sede</span>
-                <span class="tag">Senac</span>
-                <span class="tag">Senai</span>
-                <span class="tag">UPA</span>
-                <span class="tag">R$ 70 / R$ 35 (ProUni/FIES)</span>
-            </div>
-        </div>
+    <div class="rules-container">
+        <h3>⚠️ Regras de Embarque e Conduta no Ônibus</h3>
+        <ul class="rules-list">
+            <li>🪪 <span>O embarque é permitido <strong>apenas com a carteirinha carimbada</strong> e atualizada.</span></li>
+            <li>🚫 <span>É proibido <strong>sujar o ônibus</strong> com embalagens de comida ou lixo.</span></li>
+            <li>🎧 <span>Não é permitido colocar <strong>música alta</strong> (use fones de ouvido).</span></li>
+            <li>🚭 <span>Estritamente <strong>proibido fumar</strong> no interior do veículo.</span></li>
+            <li>🚫 <span>Proibido o consumo de <strong>bebidas alcoólicas</strong>.</span></li>
+        </ul>
+    </div>
 
-        <div class="card" data-tags="estácio uniseb reges direto sertãozinho ribeirão preto">
-            <h2>Estácio Uniseb (Sertãozinho ➔ Ribeirão Preto)</h2>
-            <span class="status-badge" data-route="sertaozinho-estacio">Verificando status...</span>
-            <div class="info-item"><span class="info-label">Saída de Sertãozinho:</span> 06:00 | 11:30 | 18:00 (Ginásio Docão)</div>
-            <div class="info-item"><span class="info-label">Retorno (Ribeirão):</span> 12:30 | 13:00 | 16:00 | 17:00 | 18:50 | 23:00 | 00:00</div>
-            <div class="info-item">
-                <span class="price-badge">
-                    R$ 70,00 / mês 
-                    <span class="price-sub">(R$ 35,00 Bolsistas ProUni / FIES)</span>
-                </span>
-            </div>
-            <div class="tag-list">
-                <span class="tag">Direto</span>
-                <span class="tag">Faculdade Reges</span>
-                <span class="tag">R$ 70 / R$ 35 (ProUni/FIES)</span>
-            </div>
+    <div class="contact-container">
+        <h3>📞 Central de Atendimento e Cadastros</h3>
+        <div class="contact-item">
+            <span class="info-label">📍 Onde fazer o cadastro / renovação:</span> 
+            <p style="margin: 5px 0 0 0; opacity: 0.9; line-height: 1.5;">
+                <strong>Sertãozinho:</strong><br>
+                • Terminal Urbano (Rua Sebastião Sampaio, 1009 - Centro)<br>
+                • Secretaria Municipal de Educação (Rua Washington Luiz, 1040 - Centro)<br><br>
+                <strong>Guariba:</strong><br>
+                • Terminal Rodoviário José Chartune (Rua dos Belodi, s/n - Centro)
+            </p>
         </div>
-
-        <div class="card" data-tags="usp ribeirão preto sertãozinho">
-            <h2>USP - Ribeirão Preto (Sertãozinho ➔ Ribeirão Preto)</h2>
-            <span class="status-badge" data-route="sertaozinho-usp">Verificando status...</span>
-            <div class="info-item"><span class="info-label">Saída de Sertãozinho:</span> 06:00 | 11:30 | 18:00 (Ginásio Docão)</div>
-            <div class="info-item"><span class="info-label">Retorno (Ribeirão):</span> 12:30 | 13:00 | 16:00 | 17:00 | 18:50 | 23:00 | 00:00</div>
-            <div class="info-item">
-                <span class="price-badge">
-                    R$ 70,00 / mês 
-                    <span class="price-sub">(R$ 35,00 Bolsistas ProUni / FIES)</span>
-                </span>
-            </div>
-            <div class="tag-list">
-                <span class="tag">Direto</span>
-                <span class="tag">R$ 70 / R$ 35 (ProUni/FIES)</span>
-            </div>
+        <div class="contact-item" style="margin-top: 15px;">
+            <span class="info-label">📱 WhatsApp de Contato:</span> 
+            <p style="margin: 5px 0 0 0; font-weight: bold; color: var(--text-main);">(16) 99154-3499</p>
         </div>
-
-        <div class="card" data-tags="unaerp metropolitano sertãozinho ribeirão preto">
-            <h2>Unaerp (Sertãozinho ➔ Ribeirão Preto)</h2>
-            <span class="status-badge" data-route="sertaozinho-unaerp">Verificando status...</span>
-            <div class="info-item"><span class="info-label">Saída de Sertãozinho:</span> 06:00 | 11:30 | 18:00 (Ginásio Docão)</div>
-            <div class="info-item"><span class="info-label">Retorno (Ribeirão):</span> 12:30 | 13:00 | 16:00 | 17:00 | 18:50 | 23:00 | 00:00</div>
-            <div class="info-item">
-                <span class="price-badge">
-                    R$ 70,00 / mês 
-                    <span class="price-sub">(R$ 35,00 Bolsistas ProUni / FIES)</span>
-                </span>
-            </div>
-            <div class="tag-list">
-                <span class="tag">Direto</span>
-                <span class="tag">Curso Metropolitano</span>
-                <span class="tag">R$ 70 / R$ 35 (ProUni/FIES)</span>
-            </div>
+        <div class="contact-item" style="margin-top: 15px;">
+            <span class="info-label">🌐 Site Oficial:</span> 
+            <p style="margin: 5px 0 0 0;"><a href="https://www.sertanezina.com.br/" target="_blank" style="color: var(--text-main); font-weight: bold;">www.sertanezina.com.br</a></p>
         </div>
+    </div>
 
-        <div class="card" data-tags="unip fatec liceu albert sabin sertãozinho ribeirão preto">
-            <h2>UNIP (Sertãozinho ➔ Ribeirão Preto)</h2>
-            <span class="status-badge" data-route="sertaozinho-unip">Verificando status...</span>
-            <div class="info-item"><span class="info-label">Saída de Sertãozinho:</span> 06:00 | 11:30 | 18:00 (Ginásio Docão)</div>
-            <div class="info-item"><span class="info-label">Retorno (Ribeirão):</span> 12:30 | 13:00 | 16:00 | 17:00 | 18:50 | 23:00 | 00:00</div>
-            <div class="info-item">
-                <span class="price-badge">
-                    R$ 70,00 / mês 
-                    <span class="price-sub">(R$ 35,00 Bolsistas ProUni / FIES)</span>
-                </span>
-            </div>
-            <div class="tag-list">
-                <span class="tag">Fatec</span>
-                <span class="tag">Liceu Albert Sabin</span>
-                <span class="tag">R$ 70 / R$ 35 (ProUni/FIES)</span>
-            </div>
+    <button class="chat-fab" onclick="toggleChat()">🤖 Assistente IA</button>
+
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <span>Assistente Viação Sertanezina</span>
+            <button class="chat-close" onclick="toggleChat()">✕</button>
         </div>
-
-        <div class="card" data-tags="anhanguera sertãozinho ribeirão preto">
-            <h2>Faculdade Anhanguera (Sertãozinho ➔ Ribeirão Preto)</h2>
-            <span class="status-badge" data-route="sertaozinho-anhanguera">Verificando status...</span>
-            <div class="info-item"><span class="info-label">Saída de Sertãozinho:</span> 06:00 | 11:30 | 18:00 (Ginásio Docão)</div>
-            <div class="info-item"><span class="info-label">Retorno (Ribeirão):</span> 12:30 | 13:00 | 16:00 | 17:00 | 18:50 | 23:00 | 00:00</div>
-            <div class="info-item">
-                <span class="price-badge">
-                    R$ 70,00 / mês 
-                    <span class="price-sub">(R$ 35,00 Bolsistas ProUni / FIES)</span>
-                </span>
-            </div>
-            <div class="tag-list">
-                <span class="tag">Direto</span>
-                <span class="tag">R$ 70 / R$ 35 (ProUni/FIES)</span>
-            </div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-message bot">Olá! Sou a assistente virtual. Pergunte sobre horários, valores, rotas ou regras de embarque!</div>
         </div>
-
-        <div class="card" data-tags="jaboticabal sertãozinho são luiz usp moura lacerda unesp">
-            <h2>Sertãozinho ➔ Jaboticabal</h2>
-            <span class="status-badge" data-route="sertaozinho-jaboticabal">Verificando status...</span>
-            <div class="info-item"><span class="info-label">Saída de Sertãozinho:</span> 18:00 (Av. João Perticarrari, em frente ao Posto Savegnago)</div>
-            <div class="info-item"><span class="info-label">Retorno (Jaboticabal):</span> 23:00 (Pick up nas escolas e drop off personalizado)</div>
-            <div class="info-item">
-                <span class="price-badge">
-                    R$ 70,00 / mês 
-                    <span class="price-sub">(R$ 35,00 Bolsistas ProUni / FIES)</span>
-                </span>
-            </div>
-            <div class="tag-list">
-                <span class="tag">São Luiz</span>
-                <span class="tag">USP</span>
-                <span class="tag">Moura Lacerda</span>
-                <span class="tag">Unesp</span>
-                <span class="tag">R$ 70 / R$ 35 (ProUni/FIES)</span>
-            </div>
-        </div>
-
-        <div class="card" data-tags="guariba ribeirão preto praça central usp senai senac barão central unaerp estacio unip cursinho barão independência fatec mariane junqueira anhanguera av portugal moura centro etec regis grau tecnico">
-            <h2>Guariba ➔ Ribeirão Preto</h2>
-            <span class="status-badge" data-route="ribeirao-preto-guariba">Verificando status...</span>
-            <div class="info-item"><span class="info-label">Saída de Guariba:</span> 05:20 | 10:40 | 17:30 (Praça Central)</div>
-            <div class="info-item"><span class="info-label">Retorno (Ribeirão Preto):</span> 12:00 | 16:45 | 22:45 (Praça Central)</div>
-            <div class="info-item">
-                <span class="price-badge">R$ 370,00 / mês</span>
-                <span class="exemption-badge">📅 Isento nas férias de Julho e Dezembro</span>
-            <div class="tag-list">
-                <span class="tag">USP</span>
-                <span class="tag">Senai / Senac</span>
-                <span class="tag">Barão Central / Independência</span>
-                <span class="tag">Unaerp</span>
-                <span class="tag">UNIP</span>
-                <span class="tag">Fatec</span>
-                <span class="tag">Anhanguera</span>
-                <span class="tag">Grau Técnico</span>
-                <span class="tag">R$ 370,00</span>
-                <span class="tag">Sem pagamento em Julho/Dezembro</span>
-            </div>
-        </div>
-
-        <div class="card" data-tags="guariba taquaritinga praça central fatec ipif">
-            <h2>Guariba ➔ Taquaritinga</h2>
-            <span class="status-badge" data-route="taquaritinga-guariba">Verificando status...</span>
-            <div class="info-item"><span class="info-label">Saída de Guariba:</span> 17:30 (Praça Central)</div>
-            <div class="info-item"><span class="info-label">Retorno (Taquaritinga):</span> 22:40 (Praça Central)</div>
-            <div class="info-item">
-                <span class="price-badge">R$ 370,00 / mês</span>
-                <span class="exemption-badge">📅 Isento nas férias de Julho e Dezembro</span>
-            </div>
-            <div class="tag-list">
-                <span class="tag">Fatec</span>
-                <span class="tag">IPIF</span>
-                <span class="tag">R$ 370,00</span>
-                <span class="tag">Sem pagamento em Julho/Dezembro</span>
-            </div>
+        <div class="chat-footer">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Digite sua dúvida..." onkeypress="handleKeyPress(event)">
+            <button class="chat-send" onclick="sendQuery()">Enviar</button>
         </div>
     </div>
 
